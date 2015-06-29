@@ -32,3 +32,9 @@
                                        :method => "delete"} %></p>
 
 <p><%= link_to "Return to lists", lists_path %></p>
+
+<h4>Here is all the tasks that are actually done:</h4>
+
+<% @tasks.each do |t| %>
+<li><%=t.description %></li>
+<% end %>
