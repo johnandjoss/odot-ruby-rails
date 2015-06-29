@@ -7,8 +7,36 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+      <div class="container">
+        <div class="navbar-header">
 
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+
+          <a href="" class="navbar-brand">ODOT: Things To NOT Do</a>
+
+        </div><!-- end of navbar header div -->
+         <div class="collapse navbar-collapse" id="navbar-collapse">
+
+
+
+          <ul class="nav navbar-nav">
+          <li><a href="#feedback">Feedback From Mom</a></li>
+          <li><a href="#gallery">Gallery Of Scary Decisions</a></li>
+          <li><a href="#faq">FAQ </a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- end of nav that contains ul links -->
+
+      </div><!--end of nav container -->
+    </nav><!-- End navbar -->
+
+<div class="container">
 <%= yield %>
-
+</div>
 </body>
 </html>
